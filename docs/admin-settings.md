@@ -3,7 +3,7 @@ title: Settings
 description: Gateway connection, default model, and feature flags.
 ---
 
-The Settings tab is your gateway configuration page. This is the first tab you'll see after installing LogicAI if the gateway hasn't been connected yet.
+The Settings tab is your gateway configuration page. This is the first tab you'll see after installing Logic AI if the gateway hasn't been connected yet.
 
 ## Gateway Connection
 
@@ -19,11 +19,10 @@ The top section shows your connection status:
 3. The gateway validates your org and provisions a secure workspace
 4. On success, the popup closes and your connection status turns green
 
-The connection is secured via a Named Credential with an encrypted bearer token. The token is never visible in Apex code and can only be used for authorized callouts to the LogicAI gateway.
 
 ### Disconnecting
 
-Click **Disconnect** to revoke the gateway token immediately. This stops all LogicAI conversations in your org until you reconnect. Use this if you suspect the token has been compromised or if you're decommissioning LogicAI.
+Click **Disconnect** to revoke the gateway token immediately. This stops all Logic AI conversations in your org until you reconnect. Use this if you suspect the token has been compromised or if you're decommissioning Logic AI.
 
 ## Default Model
 
@@ -31,9 +30,4 @@ Select the AI model used for conversations. More capable models produce better r
 
 ## Feature Flags
 
-- **Chatbot Enabled** — Master on/off switch for LogicAI. When disabled, users see a "temporarily unavailable" message instead of the chat interface.
-- **Streaming Enabled** — When on, responses appear in real-time as the AI generates them. When off, users see a loading spinner until the full response is ready. Streaming must be enabled for write operations (create, update, delete records).
-
-## Max Turns
-
-The maximum number of tool-use rounds per conversation turn. Each "turn" is one cycle of: user sends a message, AI responds, optionally uses tools, and responds again. Default is 8. Higher values allow more complex multi-step operations but cost more credits.
+- **Chatbot Enabled** — Master on/off switch for Logic AI. When disabled, users see a "temporarily unavailable" message instead of the chat interface.
