@@ -3,7 +3,7 @@ title: Dashboard
 description: Overview of Logic AI usage, credit balance, and recent activity.
 ---
 
-The Dashboard is the landing page of the Logic AI admin console. It gives you a high-level view of how LogicAI is being used across your org.
+The Dashboard is the landing page of the Logic AI admin console. It gives you a high-level view of how Logic AI is being used across your org.
 
 ## What You'll See
 
