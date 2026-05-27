@@ -1,9 +1,7 @@
 ---
-title: "Admin: Users"
-order: 4
+title: Users
+description: Manage who has access to LogicAI and their roles.
 ---
-
-# Users
 
 The Users tab lets you manage who has access to LogicAI and what role they have.
 

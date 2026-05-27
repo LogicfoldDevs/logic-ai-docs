@@ -1,9 +1,7 @@
 ---
-title: "Admin: Credits"
-order: 5
+title: Credits
+description: Manage your AI credit balance and purchase more credits.
 ---
-
-# Credits
 
 The Credits tab manages your organization's AI credit balance. Every LogicAI conversation consumes credits based on the AI model used and the length of the conversation.
 

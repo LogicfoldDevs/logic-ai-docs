@@ -1,9 +1,7 @@
 ---
 title: Tools Reference
-order: 11
+description: Complete list of tools LogicAI can use to interact with your Salesforce data.
 ---
-
-# Tools Reference
 
 LogicAI has a set of built-in tools that let it interact with your Salesforce data. Each tool can be individually enabled or disabled from the [Policies](/docs/admin-policies) tab.
 

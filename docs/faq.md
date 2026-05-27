@@ -1,9 +1,7 @@
 ---
 title: FAQ
-order: 12
+description: Common questions about LogicAI, troubleshooting, and security.
 ---
-
-# Frequently Asked Questions
 
 ## General
 

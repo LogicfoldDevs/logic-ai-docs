@@ -1,9 +1,7 @@
 ---
-title: "Admin: Policies"
-order: 3
+title: Policies
+description: Control which tools LogicAI can use and configure per-user overrides.
 ---
-
-# Policies
 
 The Policies tab controls what LogicAI can and cannot do in your org. This is where you define tool permissions, model access, and approval workflows.
 

@@ -1,9 +1,7 @@
 ---
-title: "Admin: Dashboard"
-order: 2
+title: Dashboard
+description: Overview of LogicAI usage, credit balance, and recent activity.
 ---
-
-# Dashboard
 
 The Dashboard is the landing page of the LogicAI admin console. It gives you a high-level view of how LogicAI is being used across your org.
 

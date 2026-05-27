@@ -1,9 +1,7 @@
 ---
-title: "Admin: Audit"
-order: 7
+title: Audit
+description: View the full event log of actions taken through LogicAI.
 ---
-
-# Audit
 
 The Audit tab provides a complete event log of significant actions taken through LogicAI.
 

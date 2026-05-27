@@ -1,0 +1,74 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "LogicAI Docs",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#6366F1",
+    "light": "#818CF8",
+    "dark": "#4F46E5",
+    "anchors": {
+      "from": "#6366F1",
+      "to": "#818CF8"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Website",
+      "url": "https://www.logicfold.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://www.logicfold.com"
+  },
+  "tabs": [
+    {
+      "name": "Changelog",
+      "url": "changelog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "docs/getting-started"
+      ]
+    },
+    {
+      "group": "Admin Console",
+      "pages": [
+        "docs/admin-dashboard",
+        "docs/admin-settings",
+        "docs/admin-policies",
+        "docs/admin-users",
+        "docs/admin-credits",
+        "docs/admin-memory",
+        "docs/admin-system",
+        "docs/admin-audit",
+        "docs/admin-logs"
+      ]
+    },
+    {
+      "group": "Reference",
+      "pages": [
+        "docs/tools",
+        "docs/faq"
+      ]
+    },
+    {
+      "group": "Changelog",
+      "pages": [
+        "changelog/2026-05-27",
+        "changelog/2026-05-20",
+        "changelog/2026-04-28"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://www.logicfold.com"
+  }
+}

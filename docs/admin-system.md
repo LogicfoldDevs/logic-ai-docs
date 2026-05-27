@@ -1,9 +1,7 @@
 ---
-title: "Admin: System"
-order: 9
+title: System
+description: Customize the system prompt, starter suggestions, and memory settings.
 ---
-
-# System
 
 The System tab controls LogicAI's behavior at the deepest level — the system prompt and the starter suggestions users see when they open a new chat.
 

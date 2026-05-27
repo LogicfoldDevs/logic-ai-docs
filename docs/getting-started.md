@@ -1,9 +1,7 @@
 ---
 title: Quickstart Guide
-order: 1
+description: Get LogicAI running in your Salesforce org in under 5 minutes.
 ---
-
-# Quickstart Guide
 
 Get LogicAI running in your Salesforce org in under 5 minutes.
 

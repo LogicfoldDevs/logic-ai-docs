@@ -1,9 +1,7 @@
 ---
-title: "Admin: Logs"
-order: 8
+title: Logs
+description: System logs and error messages for diagnosing issues.
 ---
-
-# Logs
 
 The Logs tab shows system-level logs and errors from LogicAI. Use this tab to diagnose issues, monitor health, and understand what's happening under the hood.
 

@@ -1,9 +1,7 @@
 ---
-title: "Admin: Settings"
-order: 10
+title: Settings
+description: Gateway connection, default model, and feature flags.
 ---
-
-# Settings
 
 The Settings tab is your gateway configuration page. This is the first tab you'll see after installing LogicAI if the gateway hasn't been connected yet.
 

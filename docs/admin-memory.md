@@ -1,9 +1,7 @@
 ---
-title: "Admin: Memory"
-order: 6
+title: Memory
+description: Configure LogicAI's long-term memory for users, org knowledge, and agent learning.
 ---
-
-# Memory
 
 The Memory tab manages LogicAI's long-term memory system. Memory allows LogicAI to remember facts about users, learn from past interactions, and get smarter over time.
 
