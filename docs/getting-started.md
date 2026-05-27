@@ -1,15 +1,15 @@
 ---
 title: Quickstart Guide
-description: Get LogicAI running in your Salesforce org in under 5 minutes.
+description: Get Logic AI running in your Salesforce org in under 5 minutes.
 ---
 
-Get LogicAI running in your Salesforce org in under 5 minutes.
+Get Logic AI running in your Salesforce org in under 5 minutes.
 
 ## Step 1: Install the Package
 
 Your Logicfold representative will provide an installation link. Click it, choose **Install for Admins Only**, and wait for the confirmation email.
 
-After installation you'll land on a post-install page — you can also find LogicAI under **Setup > Installed Packages** at any time.
+After installation you'll land on a post-install page — you can also find Logic AI under **Setup > Installed Packages** at any time.
 
 ## Step 2: Open the Admin Console
 
@@ -23,7 +23,7 @@ On the **Settings** tab, click **Connect to Logicfold**. A popup will open:
 2. Enter your email address
 3. Click **Request Access**
 
-The popup closes automatically and the Settings tab will show a green **Connected** status. Your org now has a secure, encrypted connection to the LogicAI gateway.
+The popup closes automatically and the Settings tab will show a green **Connected** status. Your org now has a secure, encrypted connection to the Logic AI gateway.
 
 ## Step 4: Assign Permissions
 
@@ -31,8 +31,8 @@ Assign the appropriate permissions to each user:
 
 | Permission Set | Who gets it | What it grants |
 |---|---|---|
-| **Admin** | Salesforce admins managing LogicAI | Full access to admin console, settings, policies, logs |
-| **User** | End users chatting with LogicAI | Access to the chat interface and standard AI tools |
+| **Admin** | Salesforce admins managing Logic AI | Full access to admin console, settings, policies, logs |
+| **User** | End users chatting with Logic AI | Access to the chat interface and standard AI tools |
 
 Go to **Logic AI Admin > Users**, and add the permissions for the users there.
 
@@ -40,7 +40,7 @@ The installing admin is automatically assigned Admin during installation.
 
 ## Step 5: Start Chatting
 
-Go to the **App Launcher** (the waffle icon) and search for **Logic AI** . The LogicAI chat panel will appears. Try:
+Go to the **App Launcher** (the waffle icon) and search for **Logic AI** . The Logic AI chat panel will appears. Try:
 
 - **"Show me all contacts at this account"** — queries related records
 - **"What open opportunities do I have closing this month?"** — filters by your user and date
