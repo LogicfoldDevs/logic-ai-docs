@@ -11,8 +11,8 @@ This guide walks through configuring LogicAI for your organization.
 
 LogicAI ships with two permission sets:
 
-- **Agentfold Admin** — Full access to the admin console, settings, policies, logs, and gateway configuration. Assign to Salesforce admins who will manage LogicAI.
-- **Agentfold User** — Access to the chat interface and standard AI tools. Assign to end users who will interact with LogicAI.
+- **Admin** — Full access to the admin console, settings, policies, logs, and gateway configuration. Assign to Salesforce admins who will manage LogicAI.
+- **User** — Access to the chat interface and standard AI tools. Assign to end users who will interact with LogicAI.
 
 ## Connecting to Logicfold
 
