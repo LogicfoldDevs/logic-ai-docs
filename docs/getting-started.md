@@ -12,8 +12,6 @@ LogicAI is an AI-powered assistant that lives inside your Salesforce org. Ask qu
 1. Install the LogicAI managed package from your Logicfold representative
 2. After installation, navigate to the **LogicAI Admin** tab in Salesforce
 3. Click **Connect to Logicfold** and follow the setup wizard
-4. Assign the **Agentfold Admin** permission set to administrators
-5. Assign the **Agentfold User** permission set to end users
 
 ## Opening LogicAI
 
