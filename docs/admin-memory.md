@@ -1,21 +1,21 @@
 ---
 title: Memory
-description: Configure LogicAI's long-term memory for users, org knowledge, and agent learning.
+description: Configure Logic AI's long-term memory for users, org knowledge, and agent learning.
 ---
 
-The Memory tab manages LogicAI's long-term memory system. Memory allows LogicAI to remember facts about users, learn from past interactions, and get smarter over time.
+The Memory tab manages Logic AI's long-term memory system. Memory allows Logic AI to remember facts about users, learn from past interactions, and get smarter over time.
 
 ## Memory Types
 
 ### User Memory
 
-Per-user facts and preferences that LogicAI remembers across conversations. Examples:
+Per-user facts and preferences that Logic AI remembers across conversations. Examples:
 
 - "This user prefers results in table format"
 - "This user works primarily with the West region accounts"
 - "This user's timezone is Pacific"
 
-Users can ask LogicAI to remember or forget things during conversation. User memories are private to each user.
+Users can ask Logic AI to remember or forget things during conversation. User memories are private to each user.
 
 ### Org Memory
 
@@ -25,17 +25,17 @@ Org-wide knowledge that benefits all users. Examples:
 - "The 'Priority' field on Cases uses values: P1, P2, P3, P4"
 - "Opportunities over $100K require VP approval"
 
-Any user can ask LogicAI to remember something for the org.
+Any user can ask Logic AI to remember something for the org.
 
 ### Agent Memory
 
-Lessons that LogicAI learns automatically from successful error recovery during conversations. For example, if LogicAI encounters a field validation rule and figures out how to work around it, it remembers that pattern for future conversations with all users.
+Lessons that Logic AI learns automatically from successful error recovery during conversations. For example, if Logi cAI encounters a field validation rule and figures out how to work around it, it remembers that pattern for future conversations with all users.
 
-Agent memory is self-curating — LogicAI consolidates and deduplicates it automatically.
+Agent memory is self-curating — Logic AI consolidates and deduplicates it automatically.
 
 ## Memory Consolidation
 
-When memory grows large (over 30KB for user memory, over 4KB for agent memory), LogicAI automatically consolidates it — merging duplicates, removing outdated facts, and keeping the most useful information. This runs in the background and doesn't affect active conversations.
+When memory grows large (over 30KB for user memory, over 4KB for agent memory), Logic AI automatically consolidates it — merging duplicates, removing outdated facts, and keeping the most useful information. This runs in the background and doesn't affect active conversations.
 
 ## Managing Memory
 
