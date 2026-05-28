@@ -1,20 +1,20 @@
 ---
 title: System
-description: Customize the system prompt, starter suggestions, and memory settings.
+description: Customize the system prompt and starter suggestions.
 ---
 
-The System tab controls LogicAI's behavior at the deepest level — the system prompt and the starter suggestions users see when they open a new chat.
+The System tab controls Logic AI's behavior at the deepest level — the system prompt and the starter suggestions users see when they open a new chat.
 
 ## System Prompt
 
-The system prompt is the instruction set that shapes how LogicAI behaves in your org. It tells the AI:
+The system prompt is the instruction set that shapes how Logic AI behaves in your org. It tells the AI:
 
 - What its role is (e.g., "You are a helpful Salesforce assistant for Acme Corp")
 - How to respond (tone, format, level of detail)
 - What domain knowledge to apply
 - Any org-specific rules or constraints
 
-LogicAI ships with a carefully tuned default system prompt. You can customize it from this tab to tailor the AI's personality and knowledge to your organization.
+Logic AI ships with a carefully tuned default system prompt. You can customize it from this tab to tailor the AI's personality and knowledge to your organization.
 
 ### Tips for Customizing
 
@@ -25,7 +25,7 @@ LogicAI ships with a carefully tuned default system prompt. You can customize it
 
 ## Starter Suggestions
 
-Starter suggestions are the example prompts shown to users when they open a new chat session. They help users understand what LogicAI can do and encourage adoption.
+Starter suggestions are the example prompts shown to users when they open a new chat session. They help users understand what Logic AI can do and encourage adoption.
 
 You can customize these to match your org's use cases. Good starter suggestions are:
 
@@ -33,6 +33,3 @@ You can customize these to match your org's use cases. Good starter suggestions 
 - Actionable ("Create a follow-up task for this contact")
 - Varied (mix queries, record operations, and analysis)
 
-## Memory Toggle
-
-The System tab also includes the master toggle for memory features. When disabled, LogicAI will not store or recall any user or org memories. Agent memory consolidation is also paused.
