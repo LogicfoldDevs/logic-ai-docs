@@ -3,34 +3,33 @@ title: Logs
 description: System logs and error messages for diagnosing issues.
 ---
 
-The Logs tab shows system-level logs and errors from LogicAI. Use this tab to diagnose issues, monitor health, and understand what's happening under the hood.
+The Logs tab shows the **most recent 50 chat errors and warnings** from Logic AI. Use it to diagnose issues and understand what went wrong under the hood. (Routine informational events aren't surfaced here — this view is focused on problems.)
 
 ## Log Entries
 
-Each log entry includes:
+Each entry shows a one-line summary; click it to expand. A row includes:
 
+- **Severity** — Error or Warning
 - **Timestamp** — When the event occurred
-- **Level** — INFO, WARN, or ERROR
+- **Source** — The Apex method that logged it
 - **Message** — A human-readable description of what happened
-- **Details** — Expandable section with full context (request/response data, stack traces, etc.)
+- **HTTP status** — Shown when the event came from a gateway callout
 
-## Common Log Messages
+Expanding an entry reveals full detail: the log name, method, the user and session it relates to, the full message, and a stack trace when one is available.
 
-| Message | What it means |
+## Common Issues
+
+| What you'll see | What it means |
 |---|---|
-| Credit balance low | Your org is running low on credits — top up soon |
 | Callout failed | The connection to the AI gateway timed out or returned an error |
 | Tool execution error | A tool (query, create, update) failed due to a Salesforce error (validation rule, required field, etc.) |
-| Memory consolidation triggered | Background memory cleanup started |
+| HTTP 402 | The org is out of credits — top up from the [Credits](/docs/admin-credits) tab |
+| HTTP 503 | The org's AI workspace is still being provisioned |
 | Session limit reached | A conversation hit the maximum number of tool-use turns |
 
-## Searching Logs
+## Refreshing
 
-Use the search bar to filter logs by keyword. Common searches:
-
-- `ERROR` — Show only errors
-- A specific user name — See logs related to that user's sessions
-- An object name — Find tool errors related to a specific Salesforce object
+Click **Refresh** to re-fetch the latest entries. There's no search box — the view always shows the most recent errors and warnings.
 
 ## Retention
 

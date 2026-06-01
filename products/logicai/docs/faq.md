@@ -24,11 +24,11 @@ Your organization's AI workspace is still being set up. This usually completes w
 
 **I can't see the LogicAI component on record pages**
 Two things to check:
-1. Your admin needs to add the `logic AI` component to the page layout via Lightning App Builder
+1. Your admin needs to add the Logic AI component to the page layout via Lightning App Builder
 2. You need the correct permission set assigned to your user
 
 **Logic AI won't create or update records**
-Write operations (create, update, delete) require streaming to be enabled. Ask your admin to check the [Settings](/docs/admin-settings) tab. Also verify that the relevant tools are enabled in [Policies](/docs/admin-policies).
+Write tools (create, update, delete, and the bulk/file tools) are **disabled by default**. Ask your admin to enable the ones you need on the [Policies](/docs/admin-policies) tab. Note that delete operations always require in-chat approval, and mass delete is locked until Logicfold enables it for your org.
 
 **I'm getting a "credit balance" error**
 Your organization has used its allocated AI credits. An admin can purchase more from the [Credits](/docs/admin-credits) tab.

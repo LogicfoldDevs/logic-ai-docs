@@ -27,7 +27,7 @@ Logic AI ships with a carefully tuned default system prompt. You can customize i
 
 Starter suggestions are the example prompts shown to users when they open a new chat session. They help users understand what Logic AI can do and encourage adoption.
 
-You can customize these to match your org's use cases. Good starter suggestions are:
+You can set up to three of them to match your org's use cases. Good starter suggestions are:
 
 - Specific to your business ("Show me overdue invoices from this month")
 - Actionable ("Create a follow-up task for this contact")

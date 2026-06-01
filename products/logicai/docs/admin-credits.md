@@ -18,4 +18,4 @@ The current credit balance is displayed at the top of the Credits tab and also o
 
 ## Purchasing Credits
 
-Click **Buy Credits** to open a Stripe checkout session. Credit packs are available in several tiers. After a successful purchase, credits are added to your balance immediately.
+Choose one of the preset credit packs or enter a custom amount, then check out. Payment is processed securely by Stripe. After a successful purchase, credits are added to your balance immediately.
