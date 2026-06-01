@@ -9,15 +9,30 @@ The Settings tab is your gateway configuration page. This is the first tab you'l
 
 The top section shows your connection status:
 
-- **Connected** (green) — Your org is linked to the Logicfold gateway and ready to use
-- **Disconnected** (red) — No active connection. Click **Connect to Logicfold** to set up
+- **Connected** (green) — Your org is linked to the Logicfold gateway
+- **Not connected** (red) — No active connection. Use **Request access** or **I have a claim code** to set up
 
 ### Connecting
 
-1. Click **Connect to Logicfold**
-2. A popup opens — enter your email and organization name
-3. The gateway validates your org and provisions a secure workspace
-4. On success, the popup closes and your connection status turns green
+There are two ways to connect. Both open a Logicfold authorization window and require accepting the **Logic AI Service Agreement**.
+
+**Request access** — start fresh from inside Salesforce:
+
+1. Click **Request access**
+2. In the window, enter your email and organization name, and accept the service agreement
+3. Click **Request access** — the window closes and your status turns green
+
+Requesting access links your org, but chat isn't live until Logicfold provisions your private AI workspace. You'll receive an email when chat is ready (usually within a few minutes).
+
+**I have a claim code** — if you signed up on the Logicfold website first:
+
+1. Click **I have a claim code**
+2. Enter the claim code from your welcome email (`CLAIM-XXXXXXXX`) and accept the service agreement
+3. Click **Connect** — the window closes and your status turns green
+
+Because your workspace is already provisioned, chat is ready immediately.
+
+If you've connected before, the button reads **Reconnect** and re-uses the org name and email already on file.
 
 
 ### Disconnecting
