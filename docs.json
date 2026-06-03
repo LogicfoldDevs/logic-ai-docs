@@ -4,7 +4,8 @@
   "name": "LogicAI Docs",
   "logo": {
     "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "light": "/logo/light.png",
+    "href": "https://www.logicfold.com/products/logicai"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -12,15 +13,12 @@
     "light": "#818CF8",
     "dark": "#4F46E5"
   },
-  "topbarLinks": [
-    {
-      "name": "Website",
-      "url": "https://www.logicfold.com"
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Website",
+      "href": "https://www.logicfold.com/products/logicai"
     }
-  ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://www.logicfold.com"
   },
   "navigation": {
     "tabs": [
