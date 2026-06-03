@@ -58,19 +58,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Changelog",
-        "groups": [
-          {
-            "group": "Changelog",
-            "pages": [
-              "products/logicai/changelog/2026-05-27",
-              "products/logicai/changelog/2026-05-20",
-              "products/logicai/changelog/2026-04-28"
-            ]
-          }
-        ]
       }
     ]
   },
