@@ -36,6 +36,7 @@
             "pages": [
               "products/logicai/docs/admin-dashboard",
               "products/logicai/docs/admin-settings",
+              "products/logicai/docs/admin-utility-bar",
               "products/logicai/docs/admin-policies",
               "products/logicai/docs/admin-users",
               "products/logicai/docs/admin-credits",
@@ -49,6 +50,7 @@
             "group": "Reference",
             "pages": [
               "products/logicai/docs/tools",
+              "products/logicai/docs/feedback-and-reactions",
               "products/logicai/docs/faq"
             ]
           }
