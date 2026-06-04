@@ -23,7 +23,7 @@ Expanding an entry reveals full detail: the log name, method, the user and sessi
 |---|---|
 | Callout failed | The connection to the AI gateway timed out or returned an error |
 | Tool execution error | A tool (query, create, update) failed due to a Salesforce error (validation rule, required field, etc.) |
-| HTTP 402 | The org is out of credits — top up from the [Credits](/docs/admin-credits) tab |
+| HTTP 402 | The org is out of credits — top up from the [Credits](/products/logicai/docs/admin-credits) tab |
 | HTTP 503 | The org's AI workspace is still being provisioned |
 | Session limit reached | A conversation hit the maximum number of tool-use turns |
 

@@ -3,7 +3,7 @@ title: Tools Reference
 description: Complete list of tools Logic AI can use to interact with your Salesforce data.
 ---
 
-Logic AI has a set of built-in tools that let it interact with your Salesforce data. Each tool can be individually enabled or disabled — org-wide or per user — from the [Policies](/docs/admin-policies) tab.
+Logic AI has a set of built-in tools that let it interact with your Salesforce data. Each tool can be individually enabled or disabled — org-wide or per user — from the [Policies](/products/logicai/docs/admin-policies) tab.
 
 ## Query Tools
 
@@ -48,7 +48,7 @@ Compose a rich, formatted report in the side panel that can be exported. Disable
 
 ## Memory Tools
 
-Available when memory is enabled on the [Memory](/docs/admin-memory) tab:
+Available when memory is enabled on the [Memory](/products/logicai/docs/admin-memory) tab:
 
 ### remember_user
 Save a fact or preference about the current user. Persists across conversations. Example: a user says "Remember that I manage the West region" and Logic AI recalls this in future chats.
@@ -71,10 +71,10 @@ Save org-wide knowledge that benefits all users. Example: "Remember that our fis
 Re-read the output of a previous tool call in the same session. Used internally when older tool results have been compacted from the conversation to save tokens. Always enabled.
 
 ### remember_agent
-Records a lesson Logic AI learned from successful error recovery (e.g., "Field X requires value Y when Z is true"). Automatically managed — admins can view and clear agent memories from the [Memory](/docs/admin-memory) tab. Always enabled.
+Records a lesson Logic AI learned from successful error recovery (e.g., "Field X requires value Y when Z is true"). Automatically managed — admins can view and clear agent memories from the [Memory](/products/logicai/docs/admin-memory) tab. Always enabled.
 
 ### get_workflow
-Retrieve the org's workflow/SOP knowledge. This becomes available once the **org deep dive** has been run from the [Memory](/docs/admin-memory) tab, which generates a summary of your org's data structure and workflows.
+Retrieve the org's workflow/SOP knowledge. This becomes available once the **org deep dive** has been run from the [Memory](/products/logicai/docs/admin-memory) tab, which generates a summary of your org's data structure and workflows.
 
 ## Security Model
 
