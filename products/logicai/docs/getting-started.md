@@ -70,7 +70,7 @@ Go to the **App Launcher** (the waffle icon) and search for **Logic AI**. The Lo
 
 ## What's Next
 
-- **[Admin Console](/docs/admin-settings)** — Configure the gateway, models, and feature flags
-- **[Policies](/docs/admin-policies)** — Control which tools are available and to whom
-- **[Tools Reference](/docs/tools)** — Full list of what LogicAI can do
-- **[FAQ](/docs/faq)** — Common questions and troubleshooting
+- **[Admin Console](/products/logicai/docs/admin-settings)** — Configure the gateway, models, and feature flags
+- **[Policies](/products/logicai/docs/admin-policies)** — Control which tools are available and to whom
+- **[Tools Reference](/products/logicai/docs/tools)** — Full list of what LogicAI can do
+- **[FAQ](/products/logicai/docs/faq)** — Common questions and troubleshooting

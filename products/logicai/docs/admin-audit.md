@@ -12,7 +12,7 @@ The Audit tab logs every **DML tool call** Logic AI ran on your org — the crea
 - **Record deletions** — Records sent to the Recycle Bin via Logic AI
 - **Bulk operations** — Mass creates, updates, and deletes with record counts
 
-Each row expands to show the user prompt that triggered it, the field changes (or record IDs), the raw tool input, and any error. Read-only reads (queries, describes) are not audited here — see the [Logs](/docs/admin-logs) tab for those.
+Each row expands to show the user prompt that triggered it, the field changes (or record IDs), the raw tool input, and any error. Read-only reads (queries, describes) are not audited here — see the [Logs](/products/logicai/docs/admin-logs) tab for those.
 
 ## Filtering
 
