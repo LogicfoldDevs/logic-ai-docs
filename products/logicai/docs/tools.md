@@ -17,7 +17,7 @@ Retrieve a single record by ID with specified fields. Useful when Logic AI needs
 Inspect an object's fields, relationships, picklist values, and record types. Logic AI uses this automatically to understand your org's schema before building queries — you don't need to ask for it explicitly. **Enabled by default.**
 
 ### sosl_search
-Search for a term across multiple objects at once (a SOSL search), useful when you don't know which object a record lives on — e.g. "find anything mentioning Acme." Disabled by default.
+Search for a term across multiple objects at once (a SOSL search), useful when you don't know which object a record lives on — e.g. "find anything mentioning Acme." **Enabled by default.**
 
 ## Record Tools
 
@@ -43,28 +43,28 @@ Delete multiple records at once. Disabled by default and **locked** — reach ou
 
 ## Action Tools
 
-These let Logic AI take action in your org beyond reading and writing records. **All are disabled by default** and are enabled per tool on the [Policies](/products/logicai/docs/admin-policies) tab. Each can optionally require in-chat approval before it runs.
+These let Logic AI take action in your org beyond reading and writing records. **All are enabled by default** and can be turned off per tool on the [Policies](/products/logicai/docs/admin-policies) tab. Each can optionally require in-chat approval before it runs.
 
 ### send_email
-Send an email on the user's behalf. **Requires in-chat approval by default** — Logic AI shows the recipients, subject, and body before anything is sent.
+Send an email on the user's behalf. Enabled by default, and **requires in-chat approval by default** — Logic AI shows the recipients, subject, and body before anything is sent.
 
 ### send_notification
-Send a Salesforce custom notification to users (the bell-icon notifications in Lightning). Disabled by default.
+Send a Salesforce custom notification to users (the bell-icon notifications in Lightning). **Enabled by default.**
 
 ### post_to_chatter
-Post a Chatter update to a record's feed or a group. Disabled by default.
+Post a Chatter update to a record's feed or a group. **Enabled by default.**
 
 ### run_report
-Run an existing Salesforce report and return its results. Disabled by default.
+Run an existing Salesforce report and return its results. **Enabled by default.**
 
 ### create_report
-Build a new Salesforce report definition. Disabled by default.
+Build a new Salesforce report definition. **Enabled by default.**
 
 ### invoke_apex_action
-Call an invocable Apex action exposed in your org. Disabled by default.
+Call an invocable Apex action exposed in your org. **Enabled by default.**
 
 ### invoke_flow
-Launch an autolaunched Flow. Disabled by default.
+Launch an autolaunched Flow. **Enabled by default.**
 
 ## File Tools
 
