@@ -19,17 +19,15 @@ It figures out the right query, runs it with your permissions, and shows you the
 
 ## Taking action
 
-Beyond reading data, Logic AI can act on your behalf (your admin controls which of these are turned on):
+Beyond reading data, Logic AI can do work for you. Depending on what your admin has enabled, it can:
 
-- **Send an email** — drafts it and shows you the recipients, subject, and body to approve before it sends
-- **Send a notification** to other users
-- **Post to Chatter** on a record or in a group
-- **Run a report** you already have, or **build a new one**
-- **Create and update records**, including several at once
-- **Kick off your org's automations** — Flows and Apex actions
-- **Export results** as a CSV file or a formatted PDF
+- **Manage records** — create, update, and delete records, one at a time or in bulk
+- **Work with reports** — run a report you already have, or build a new one
+- **Communicate** — send an email, send a notification to other users, or post to Chatter on a record or group
+- **Run your org's automations** — launch Flows and Apex actions
+- **Export results** — produce a CSV file or a formatted PDF report
 
-For sensitive actions, Logic AI pauses and asks you to approve before anything happens. See the full list in the [Tools reference](/products/logicai/docs/tools).
+For anything sensitive — sending an email, deleting records, and others your admin chooses — Logic AI pauses and asks you to approve before it happens, showing you exactly what it's about to do. The [Tools reference](/products/logicai/docs/tools) lists every tool in detail.
 
 ## Working with files
 
