@@ -29,7 +29,7 @@
             "group": "Getting Started",
             "pages": [
               "products/logicai/docs/getting-started",
-              "products/logicai/docs/blueprints"
+              "products/logicai/docs/features"
             ]
           },
           {
@@ -40,6 +40,7 @@
               "products/logicai/docs/admin-utility-bar",
               "products/logicai/docs/admin-policies",
               "products/logicai/docs/admin-users",
+              "products/logicai/docs/admin-blueprints",
               "products/logicai/docs/admin-credits",
               "products/logicai/docs/admin-memory",
               "products/logicai/docs/admin-system",
