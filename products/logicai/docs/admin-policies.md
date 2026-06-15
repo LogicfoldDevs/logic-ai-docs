@@ -31,6 +31,14 @@ Tools are grouped into **Reading data**, **DML**, and **Utilities**. Each tool c
 | Mass delete records | Bulk-delete multiple records | Locked — contact Logicfold |
 | Generate CSV | Build a CSV file and attach it to the chat | Disabled |
 | Generate PDF | Compose a formatted report in the side panel | Disabled |
+| SOSL search | Search a term across multiple objects at once | Disabled |
+| Send email | Send an email on the user's behalf | Disabled |
+| Send notification | Send a Salesforce custom notification | Disabled |
+| Post to Chatter | Post an update to a record feed or group | Disabled |
+| Run report | Run an existing report and return results | Disabled |
+| Create report | Build a new report definition | Disabled |
+| Invoke Apex action | Call an invocable Apex action | Disabled |
+| Invoke Flow | Launch an autolaunched Flow | Disabled |
 
 Disabling a tool removes it from Logic AI's available actions entirely — it won't suggest or attempt to use it.
 
@@ -46,6 +54,7 @@ Some tools expose a **Max per call** limit:
 Write tools can require the user to approve the action in-chat before it runs:
 
 - **Create record / Update record / Mass create / Mass update** — approval is configurable (toggle "Needs approval")
+- **Send email** — approval is **required by default** (configurable); Logic AI shows the recipients, subject, and body before sending
 - **Delete record / Mass delete records** — approval is **always required** and cannot be turned off
 
 ## Model Allowlist

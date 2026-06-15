@@ -28,7 +28,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "products/logicai/docs/getting-started"
+              "products/logicai/docs/getting-started",
+              "products/logicai/docs/blueprints"
             ]
           },
           {
@@ -62,6 +63,7 @@
           {
             "group": "Changelog",
             "pages": [
+              "products/logicai/docs/changelog/2026-06-15",
               "products/logicai/docs/changelog/2026-06-03"
             ]
           }
