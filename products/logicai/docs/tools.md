@@ -16,6 +16,9 @@ Retrieve a single record by ID with specified fields. Useful when Logic AI needs
 ### describe_object
 Inspect an object's fields, relationships, picklist values, and record types. Logic AI uses this automatically to understand your org's schema before building queries — you don't need to ask for it explicitly. **Enabled by default.**
 
+### sosl_search
+Search for a term across multiple objects at once (a SOSL search), useful when you don't know which object a record lives on — e.g. "find anything mentioning Acme." **Enabled by default.**
+
 ## Record Tools
 
 ### create_record
@@ -38,13 +41,41 @@ Update multiple records at once. Useful for requests like "Set all these opportu
 ### mass_delete_records
 Delete multiple records at once. Disabled by default and **locked** — reach out to Logicfold to enable it for your org. Like single deletes, it always requires in-chat approval.
 
+## Action Tools
+
+These let Logic AI take action in your org beyond reading and writing records. **All are enabled by default** and can be turned off per tool on the [Policies](/products/logicai/docs/admin-policies) tab. Each can optionally require in-chat approval before it runs.
+
+### send_email
+Send an email on the user's behalf. Enabled by default, and **requires in-chat approval by default** — Logic AI shows the recipients, subject, and body before anything is sent.
+
+### send_notification
+Send a Salesforce custom notification to users (the bell-icon notifications in Lightning). **Enabled by default.**
+
+### post_to_chatter
+Post a Chatter update to a record's feed or a group. **Enabled by default.**
+
+### run_report
+Run an existing Salesforce report and return its results. **Enabled by default.**
+
+### create_report
+Build a new Salesforce report definition. **Enabled by default.**
+
+### invoke_apex_action
+Call an invocable Apex action exposed in your org. **Enabled by default.**
+
+### invoke_flow
+Launch an autolaunched Flow. **Enabled by default.**
+
 ## File Tools
 
 ### generate_csv
-Build a CSV file from query results and attach it to the chat session for download. Disabled by default.
+Build a CSV file from query results and attach it to the chat session for download. CSV exports include the full result set (they are not limited by the SOQL row cap). Disabled by default.
 
 ### generate_pdf
 Compose a rich, formatted report in the side panel that can be exported. Disabled by default.
+
+### read_file
+Read the files attached to or related to a record — PDFs, images, text, and other file types — and return them as content Logic AI can actually see, so it can summarize or answer questions about an attachment. Always enabled (a safe, read-only capability with no side effects, so it isn't listed on the Policies tab).
 
 ## Memory Tools
 
@@ -69,6 +100,9 @@ Save org-wide knowledge that benefits all users. Example: "Remember that our fis
 
 ### get_tool_result
 Re-read the output of a previous tool call in the same session. Used internally when older tool results have been compacted from the conversation to save tokens. Always enabled.
+
+### ask_user_question
+Pause and present a clickable multiple-choice prompt in the chat when Logic AI needs you to choose between options before continuing — instead of making you type the answer. Always enabled.
 
 ### remember_agent
 Records a lesson Logic AI learned from successful error recovery (e.g., "Field X requires value Y when Z is true"). Automatically managed — admins can view and clear agent memories from the [Memory](/products/logicai/docs/admin-memory) tab. Always enabled.
