@@ -77,9 +77,19 @@ Compose a rich, formatted report in the side panel that can be exported. Disable
 ### read_file
 Read the files attached to or related to a record — PDFs, images, text, and other file types — and return them as content Logic AI can actually see, so it can summarize or answer questions about an attachment. Always enabled (a safe, read-only capability with no side effects, so it isn't listed on the Policies tab).
 
+## Metadata Tools
+
+Read-only tools that let Logic AI look up how your org is built — Apex classes, Flows, validation and workflow rules, permission sets, and LWC/Aura components — via the Tooling API, to answer questions like "what does this validation rule do?" **Admins only:** these run only for users with the Logic AI **Admin** permission set, and reading Apex additionally requires the running user's own "Author Apex" permission. Enabled by default; they appear in a **Metadata (Admins only)** group on the [Policies](/products/logicai/docs/admin-policies) tab.
+
+### list_metadata
+List metadata components of a given type (e.g. Apex classes, Flows, validation rules) so Logic AI can find the right one to read. **Enabled by default (admins only).**
+
+### read_metadata
+Read a specific component's definition as structured detail — e.g. the body of an Apex class or the logic of a Flow or validation rule. **Enabled by default (admins only).**
+
 ## Memory Tools
 
-Available when memory is enabled on the [Memory](/products/logicai/docs/admin-memory) tab:
+Logic AI's long-term memory is captured automatically and recalled invisibly (there is no "recall" tool) — see [Memory](/products/logicai/docs/admin-memory). The tools below let the model **write** to memory during a chat, and are available when memory is enabled:
 
 ### remember_user
 Save a fact or preference about the current user. Persists across conversations. Example: a user says "Remember that I manage the West region" and Logic AI recalls this in future chats.

@@ -29,7 +29,9 @@
             "group": "Getting Started",
             "pages": [
               "products/logicai/docs/getting-started",
-              "products/logicai/docs/features"
+              "products/logicai/docs/features",
+              "products/logicai/docs/coworkers",
+              "products/logicai/docs/your-memory"
             ]
           },
           {
@@ -42,6 +44,7 @@
               "products/logicai/docs/admin-users",
               "products/logicai/docs/admin-blueprints",
               "products/logicai/docs/admin-credits",
+              "products/logicai/docs/admin-usage-limits",
               "products/logicai/docs/admin-memory",
               "products/logicai/docs/admin-system",
               "products/logicai/docs/admin-audit",
@@ -59,11 +62,26 @@
         ]
       },
       {
+        "tab": "Developer",
+        "groups": [
+          {
+            "group": "Developer",
+            "pages": [
+              "products/logicai/docs/developer/overview",
+              "products/logicai/docs/developer/apex-api",
+              "products/logicai/docs/developer/registration",
+              "products/logicai/docs/developer/errors"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Changelog",
         "groups": [
           {
             "group": "Changelog",
             "pages": [
+              "products/logicai/docs/changelog/2026-07-01",
               "products/logicai/docs/changelog/2026-06-15",
               "products/logicai/docs/changelog/2026-06-03"
             ]

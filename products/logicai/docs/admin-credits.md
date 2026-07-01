@@ -19,3 +19,7 @@ The current credit balance is displayed at the top of the Credits tab and also o
 ## Purchasing Credits
 
 Choose one of the preset credit packs or enter a custom amount, then check out. Payment is processed securely by Stripe. After a successful purchase, credits are added to your balance immediately.
+
+## This Month's Spend
+
+Below the balance, the **This month's spend** section breaks down your USD spend for the current month and lets you cap it — **per source** and **per user**. See [Usage Limits](/products/logicai/docs/admin-usage-limits) for the full details.

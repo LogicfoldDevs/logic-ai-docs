@@ -14,6 +14,15 @@ Below each Logic AI message are two reaction buttons:
 
 Click either one to rate the message. Click the active button again to clear your rating. Reactions are a quick, one-click signal — no comment box appears and no chat content is sent. They help your team understand which answers are landing and which need work.
 
+### Tuning what Logic AI remembers
+
+When your org has [memory](/products/logicai/docs/admin-memory) enabled, a reaction also reveals a few small **memory feedback** chips so you can tell Logic AI *why*, in one more click:
+
+- A **👍** shows "what worked" chips — a quick way to confirm which remembered facts helped (a **Happy** signal).
+- A **👎** shows chips like *it forgot something*, *too much*, or *wrong about me* (**Missing** / **Too much** signals).
+
+Picking a chip is optional and silent. Over time these signals tune how aggressively Logic AI captures memory and how much it recalls — admins can see the resulting health score on the [Memory](/products/logicai/docs/admin-memory) tab.
+
 ## Submitting a Support Request
 
 To report a problem or ask for help, click **Get help** in the chat header. This opens the **Submit a request** form:
