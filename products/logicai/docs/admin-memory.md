@@ -27,7 +27,7 @@ Logic AI **auto-tunes capture** from these signals: the **aggressiveness** (how 
 
 ## Memory scopes
 
-Memory items are grouped on the tab by scope. Each section shows the captured items (read-only here — memory self-curates; users curate their own from the chat):
+Memory items are grouped on the tab by scope. Each section shows the captured items (read-only here — memory self-curates; users curate their own from the chat via the [Your Memory](/products/logicai/docs/your-memory) panel):
 
 - **Org context** — org-wide facts that apply to everyone (e.g. pipeline stages, what "Enterprise" means).
 - **User context** — per-user facts, grouped by user and expandable. Each user's items are private to that user.

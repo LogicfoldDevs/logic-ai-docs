@@ -63,6 +63,8 @@ The sidebar lists your recent chats and coworkers. You can start a new chat, swi
 
 When memory is enabled for your org, Logic AI **remembers useful facts about you automatically** as you chat — your role, preferences, terminology, what you tend to work on — and quietly recalls them in future conversations, no command needed. You can still nudge it explicitly (*"remember that I manage the West region"*), and your 👍 / 👎 [reactions](/products/logicai/docs/feedback-and-reactions) help it learn which remembered facts are actually helping.
 
+Want to see exactly what it's learned? Click **Memory** in the chat header to review, correct, or forget any fact — see [Your Memory](/products/logicai/docs/your-memory).
+
 ## Feedback
 
 You can react to individual answers with 👍 / 👎 and raise a support ticket directly from the chat — see [Feedback and reactions](/products/logicai/docs/feedback-and-reactions).
