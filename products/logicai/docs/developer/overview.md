@@ -29,7 +29,7 @@ The API is a thin facade over the same single round-trip the chat uses:
 
 - It's a **single-turn, no-tools** call. You send a prompt (and optionally files); Logic AI returns text. It does **not** run the agentic tool loop (no SOQL/DML tools) — that lives in the chat experience.
 - Each call is one gateway round-trip and **debits credits** from your org's balance, exactly like a chat message.
-- The **model, attribution, and spend limit** for a call come from a registered **source**, not from the request — see [Source Registration &amp; Spend Caps](/products/logicai/docs/developer/registration-spend-caps).
+- The **model and attribution** for a call come from a registered **source**, not from the request — see [Source Registration](/products/logicai/docs/developer/registration).
 
 ## The three entry points
 
@@ -48,5 +48,5 @@ All symbols are in the managed-package namespace **`lai`**: `lai.LogicAI`, `lai.
 ## Before you start
 
 1. Your org must be **connected and provisioned** — the same setup the chat needs (see the [Quickstart](/products/logicai/docs/getting-started)). If the workspace isn't ready yet, calls return a `503`.
-2. **Register your source once** and store the returned id — you pass it on every call. See [Source Registration &amp; Spend Caps](/products/logicai/docs/developer/registration-spend-caps).
+2. **Register your source once** and store the returned id — you pass it on every call. See [Source Registration](/products/logicai/docs/developer/registration).
 3. Decide how you'll handle failures — `invoke` never throws for gateway/credit/validation problems; it reports them on the response. See [Errors &amp; Status Codes](/products/logicai/docs/developer/errors).

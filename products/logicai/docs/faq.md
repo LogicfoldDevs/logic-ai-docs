@@ -18,7 +18,7 @@ Conversation data is sent to Anthropic's API for processing. Your Salesforce dat
 No. Logic AI requires Lightning Experience. The chat component is a Lightning Web Component (LWC) and is not available in Classic.
 
 **Can I call Logic AI from Apex, Flows, or triggers?**
-Yes. Logic AI ships a global Apex API (`lai.LogicAI`) so your own automation can send a prompt and get a reply, using the same gateway and credits as the chat. Register a source once, then call `invoke` (synchronous) or `invokeAsync` (for Flows/triggers). See the [Developer](/products/logicai/docs/developer/overview) section, and note that per-source [spend caps](/products/logicai/docs/developer/registration-spend-caps) let admins keep each integration in budget.
+Yes. Logic AI ships a global Apex API (`lai.LogicAI`) so your own automation can send a prompt and get a reply, using the same gateway and credits as the chat. Register a source once, then call `invoke` (synchronous) or `invokeAsync` (for Flows/triggers). See the [Developer](/products/logicai/docs/developer/overview) section, and note that admins can keep each integration in budget with per-source [usage limits](/products/logicai/docs/admin-usage-limits).
 
 ## Troubleshooting
 

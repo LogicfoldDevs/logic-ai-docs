@@ -22,20 +22,4 @@ Choose one of the preset credit packs or enter a custom amount, then check out. 
 
 ## This Month's Spend
 
-Below the balance, the **This month's spend** section shows USD spend so far this calendar month. Limits and caps reset on the 1st. It breaks spend down two ways:
-
-### By source
-
-Every place Logic AI is called from is a **source** — the chat itself, plus any integration that calls the [global Apex API](/products/logicai/docs/developer/overview). Each source shows its **model**, **spend so far**, its **limit**, and whether it's **enabled**. Click **Edit** on a row to:
-
-- **Set a monthly limit** — choose **No cap** or **Amount** and enter a USD figure. When a source reaches its limit, its calls are refused until the next month (or until you raise it).
-- **Change the model** the source runs on.
-- **Enable or disable** the source — a disabled source's calls are rejected, a quick way to switch off one integration.
-
-Chat and internal/background callers are grouped together as one "chat" bucket; each integration you registered via the API appears as its own row.
-
-### By user
-
-Spend per user, with a monthly **Cap** you can set per person (**No cap** or an **Amount**). A user who has no cap of their own falls back to the org default user cap. When a user reaches their cap, their calls are refused until the next month.
-
-> Spend caps are enforced **in addition to** your overall credit balance — a call is refused if it would exceed *either* an applicable cap or the remaining balance. Developers calling the API get a `402` response in that case; see [Errors & Status Codes](/products/logicai/docs/developer/errors).
+Below the balance, the **This month's spend** section breaks down your USD spend for the current month and lets you cap it — **per source** and **per user**. See [Usage Limits](/products/logicai/docs/admin-usage-limits) for the full details.

@@ -25,7 +25,7 @@ Id regId = lai.LogicAI.register('NightlySync', 'claude-sonnet-4-6');
 
 There's also a convenience overload **`register(String source)`** that registers on the org default model.
 
-See [Source Registration &amp; Spend Caps](/products/logicai/docs/developer/registration-spend-caps) for the full picture.
+See [Source Registration](/products/logicai/docs/developer/registration) for the full picture.
 
 ### invoke
 
@@ -77,7 +77,7 @@ Construct with `new lai.LogicAISchema.Request()` or `new lai.LogicAISchema.Reque
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
-| `registrationId` | `Id` | **Yes** | The id returned by `LogicAI.register(...)`. Identifies the source that supplies the model, spend limit, and attribution. The API will not run without it. |
+| `registrationId` | `Id` | **Yes** | The id returned by `LogicAI.register(...)`. Identifies the source that supplies the model and attribution. The API will not run without it. |
 | `prompt` | `String` | Yes* | The user's prompt / instruction. *Required unless you supply `contentBlocks`. |
 | `sessionId` | `Id` | No | Continue an existing `Bot_Session__c` conversation. When null, the call is a stateless one-shot. |
 | `systemPrompt` | `String` | No | System-prompt override. When blank, a minimal default is used — the full chat system prompt is intentionally **not** applied here. |

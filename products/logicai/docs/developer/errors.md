@@ -13,7 +13,7 @@ The synchronous methods (`invoke`, `invokeJson`) are designed to **never throw**
 |---|---|---|
 | **200** | Success | The call worked; `text` holds the reply. |
 | **400** | Bad request | A missing or invalid field on the `Request` — no `registrationId`, or no `prompt` **and** no `contentBlocks`. |
-| **402** | Insufficient credits / cap reached | The org's credit balance is too low, or a monthly [spend cap](/products/logicai/docs/developer/registration-spend-caps) has been hit. |
+| **402** | Insufficient credits / cap reached | The org's credit balance is too low, or a monthly [usage limit](/products/logicai/docs/admin-usage-limits) has been hit. |
 | **503** | Not available | The org isn't connected/provisioned yet, or the source is disabled. |
 | **500** | Unexpected error | An internal error not covered above. |
 
@@ -64,5 +64,5 @@ try {
 | "does not match a registered source" | The id doesn't resolve to a source (e.g. deleted, or from another environment). | Re-register in this org and store the new id. |
 | "is disabled" | The source was disabled on the Credits tab. | Re-enable it, or use a different source. |
 | "requires either prompt or contentBlocks" | The request had neither text nor content. | Set `prompt`, or supply `contentBlocks`. |
-| credit / payment / "402" | Balance too low or a spend cap reached. | Buy credits or raise the [cap](/products/logicai/docs/developer/registration-spend-caps). |
+| credit / payment / "402" | Balance too low or a spend cap reached. | Ask an admin to buy credits or raise the [usage limit](/products/logicai/docs/admin-usage-limits). |
 | "provisioned" / "not connected" | The org's AI workspace isn't ready. | Finish [connecting](/products/logicai/docs/getting-started) and wait for activation. |
