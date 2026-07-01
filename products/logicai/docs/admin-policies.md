@@ -39,8 +39,14 @@ Tools are grouped into **Reading data**, **DML**, and **Utilities**. Each tool c
 | Create report | Build a new report definition | Enabled |
 | Invoke Apex action | Call an invocable Apex action | Enabled |
 | Invoke Flow | Launch an autolaunched Flow | Enabled |
+| List metadata | List org metadata (Apex, Flows, rules, etc.) | Enabled — admins only |
+| Read metadata | Read a metadata component's definition | Enabled — admins only |
 
 Disabling a tool removes it from Logic AI's available actions entirely — it won't suggest or attempt to use it.
+
+### Metadata (Admins only)
+
+The **List metadata** and **Read metadata** tools appear in their own **Metadata (Admins only)** group. Even when enabled, they run only for users with the Logic AI **Admin** permission set (and reading Apex additionally requires the user's own "Author Apex" permission). They let Logic AI read how your org is built — see the [Metadata Tools](/products/logicai/docs/tools#metadata-tools) reference.
 
 ## Per-Call Limits
 

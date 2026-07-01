@@ -51,9 +51,17 @@ Each Blueprint is **private by default**. Turn on **Share with everyone in the o
 
 Running a Blueprint doesn't bypass any safeguards — it runs its steps in your user context, with the same permissions and approvals as any other chat.
 
+## Coworkers
+
+For focused, recurring work, create a **coworker** in the sidebar — a named chat persona (like *Renewals* or *Support triage*) with its own memory, colour, and optional standing instructions. Each coworker keeps its own chats and remembers what's relevant to its job, so different lines of work don't bleed together. You can keep a coworker private, share it with specific teammates, or open it to your whole org. See [Coworkers](/products/logicai/docs/coworkers).
+
+## Chats sidebar
+
+The sidebar lists your recent chats and coworkers. You can start a new chat, switch between conversations, delete chats you no longer need, and drag the divider to resize the panel — chats load as you scroll.
+
 ## Memory
 
-When memory is enabled for your org, you can tell Logic AI to **remember** facts and preferences (*"remember that I manage the West region"*) and it will recall them in future conversations.
+When memory is enabled for your org, Logic AI **remembers useful facts about you automatically** as you chat — your role, preferences, terminology, what you tend to work on — and quietly recalls them in future conversations, no command needed. You can still nudge it explicitly (*"remember that I manage the West region"*), and your 👍 / 👎 [reactions](/products/logicai/docs/feedback-and-reactions) help it learn which remembered facts are actually helping.
 
 ## Feedback
 

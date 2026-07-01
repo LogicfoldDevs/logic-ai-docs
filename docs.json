@@ -29,7 +29,8 @@
             "group": "Getting Started",
             "pages": [
               "products/logicai/docs/getting-started",
-              "products/logicai/docs/features"
+              "products/logicai/docs/features",
+              "products/logicai/docs/coworkers"
             ]
           },
           {
@@ -59,11 +60,26 @@
         ]
       },
       {
+        "tab": "Developer",
+        "groups": [
+          {
+            "group": "Developer",
+            "pages": [
+              "products/logicai/docs/developer/overview",
+              "products/logicai/docs/developer/apex-api",
+              "products/logicai/docs/developer/registration-spend-caps",
+              "products/logicai/docs/developer/errors"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Changelog",
         "groups": [
           {
             "group": "Changelog",
             "pages": [
+              "products/logicai/docs/changelog/2026-07-01",
               "products/logicai/docs/changelog/2026-06-15",
               "products/logicai/docs/changelog/2026-06-03"
             ]
