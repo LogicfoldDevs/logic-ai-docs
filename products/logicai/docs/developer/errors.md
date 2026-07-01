@@ -12,7 +12,7 @@ The synchronous methods (`invoke`, `invokeJson`) are designed to **never throw**
 | Code | Meaning | Typical cause |
 |---|---|---|
 | **200** | Success | The call worked; `text` holds the reply. |
-| **400** | Bad request | A missing or invalid field on the `Request` — no `registrationId`, no `prompt` **and** no `contentBlocks`, or a `creditMultiplier` outside 1–100. |
+| **400** | Bad request | A missing or invalid field on the `Request` — no `registrationId`, or no `prompt` **and** no `contentBlocks`. |
 | **402** | Insufficient credits / cap reached | The org's credit balance is too low, or a monthly [spend cap](/products/logicai/docs/developer/registration-spend-caps) has been hit. |
 | **503** | Not available | The org isn't connected/provisioned yet, or the source is disabled. |
 | **500** | Unexpected error | An internal error not covered above. |
@@ -46,7 +46,7 @@ The only method that throws for these conditions is **`invokeAsync`**, which val
 try {
     lai.LogicAI.invokeAsync(req);
 } catch (lai.LogicAI.LogicAIException e) {
-    // Missing registrationId, empty prompt+blocks, bad multiplier,
+    // Missing registrationId, empty prompt+blocks,
     // or an unregistered / disabled source.
     System.debug(e.getMessage());
 }
@@ -64,6 +64,5 @@ try {
 | "does not match a registered source" | The id doesn't resolve to a source (e.g. deleted, or from another environment). | Re-register in this org and store the new id. |
 | "is disabled" | The source was disabled on the Credits tab. | Re-enable it, or use a different source. |
 | "requires either prompt or contentBlocks" | The request had neither text nor content. | Set `prompt`, or supply `contentBlocks`. |
-| "creditMultiplier must be between 1 and 100" | Out-of-range multiplier. | Use a value in 1–100, or leave it unset. |
 | credit / payment / "402" | Balance too low or a spend cap reached. | Buy credits or raise the [cap](/products/logicai/docs/developer/registration-spend-caps). |
 | "provisioned" / "not connected" | The org's AI workspace isn't ready. | Finish [connecting](/products/logicai/docs/getting-started) and wait for activation. |

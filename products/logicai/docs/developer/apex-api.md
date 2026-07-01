@@ -66,7 +66,6 @@ Construct with `new lai.LogicAISchema.Request()` or `new lai.LogicAISchema.Reque
 | `sessionId` | `Id` | No | Continue an existing `Bot_Session__c` conversation. When null, the call is a stateless one-shot. |
 | `systemPrompt` | `String` | No | System-prompt override. When blank, a minimal default is used — the full chat system prompt is intentionally **not** applied here. |
 | `contentBlocks` | `List<Object>` | No | Structured content blocks for the user message — required for anything other than plain text (PDFs, images). See below. |
-| `creditMultiplier` | `Decimal` | No | Per-call billing multiplier (1–100). Scales the **credits debited** for this call; the underlying AI cost is unchanged. Null/unset means 1 (no markup). |
 
 > **Deprecated fields:** `model` and `agent` are no longer honoured — the model and attribution now come from the registered source. They remain on the class only for binary compatibility; any value you set is ignored. Pass the model to `register(...)` instead.
 
@@ -103,7 +102,7 @@ Images use `'type' => 'image'` with a `media_type` like `image/jpeg`.
 | `sessionId` | `Id` | The session used. Null for a stateless one-shot. |
 | `inputTokens` | `Integer` | Input tokens consumed. |
 | `outputTokens` | `Integer` | Output tokens produced. |
-| `credits` | `Decimal` | Credits consumed by this call (gateway-reported, after any `creditMultiplier`). |
+| `credits` | `Decimal` | Credits consumed by this call (gateway-reported). |
 | `error` | `String` | Human-readable message when `success == false`. |
 
 `Response` also exposes **`toJson()`**, which serialises it to pretty-printed JSON (this is what `invokeJson` returns).

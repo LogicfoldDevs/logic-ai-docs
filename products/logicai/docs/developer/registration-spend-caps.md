@@ -39,10 +39,6 @@ Admins can cap spend in **USD per calendar month** at three levels. Caps and lim
 
 When a call would exceed an applicable cap, the gateway refuses it and the response comes back with a credit/limit error (see [Errors &amp; Status Codes](/products/logicai/docs/developer/errors)). Caps are enforced **in addition to** the org's overall credit balance — running out of either stops calls.
 
-### The credit multiplier vs. spend caps
-
-`Request.creditMultiplier` (1–100) marks **up the credits debited** for a call without changing the underlying AI cost — useful if you resell or internally charge back Logic AI usage. Because caps are measured in the resulting spend, a higher multiplier reaches a cap sooner. Leave it unset (1) for straight pass-through billing.
-
 ## Disabling a source
 
 A source can be **disabled** from the Credits tab. A disabled source's calls are rejected (its `invoke` returns an error and `invokeAsync` throws), which is a quick way to switch off one integration without touching code or the org's other callers.
