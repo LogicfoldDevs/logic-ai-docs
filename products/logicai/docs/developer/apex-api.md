@@ -7,7 +7,11 @@ All symbols live in the managed-package namespace **`lai`**. These are `global` 
 
 ## `LogicAI` methods
 
-### `register(String source, String model)` → `Id`
+### register
+
+```apex
+Id register(String source, String model)
+```
 
 Registers a **source** (a caller) and returns its **registration id**. Call this **once** at setup, store the id, and reuse it — not before every invoke. Idempotent: calling again with the same `source` returns the same id.
 
@@ -23,7 +27,11 @@ There's also a convenience overload **`register(String source)`** that registers
 
 See [Source Registration &amp; Spend Caps](/products/logicai/docs/developer/registration-spend-caps) for the full picture.
 
-### `invoke(LogicAISchema.Request request)` → `LogicAISchema.Response`
+### invoke
+
+```apex
+LogicAISchema.Response invoke(LogicAISchema.Request request)
+```
 
 Synchronous single round-trip. Does the gateway callout inline and returns the response.
 
@@ -35,7 +43,11 @@ lai.LogicAISchema.Response res = lai.LogicAI.invoke(req);
 
 **Does not throw** for gateway, credit, or validation failures — inspect `res.success` / `res.statusCode` / `res.error` instead. Must be called from a context that permits synchronous callouts (Queueable, `@future`, controller action, anonymous Apex).
 
-### `invokeJson(LogicAISchema.Request request)` → `String`
+### invokeJson
+
+```apex
+String invokeJson(LogicAISchema.Request request)
+```
 
 Same as `invoke`, but returns the `Response` serialised to JSON. Handy for handing a single string to a Flow text variable.
 
@@ -43,7 +55,11 @@ Same as `invoke`, but returns the `Response` serialised to JSON. Handy for handi
 String json = lai.LogicAI.invokeJson(req);
 ```
 
-### `invokeAsync(LogicAISchema.Request request)` → `Id`
+### invokeAsync
+
+```apex
+Id invokeAsync(LogicAISchema.Request request)
+```
 
 Asynchronous variant for contexts where a synchronous callout **isn't** allowed — Flows, triggers, after-DML. Enqueues a Queueable that performs the gateway call off-transaction, and returns immediately.
 
