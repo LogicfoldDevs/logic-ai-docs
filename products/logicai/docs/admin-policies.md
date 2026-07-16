@@ -67,6 +67,13 @@ Write tools can require the user to approve the action in-chat before it runs:
 
 The **Models** section controls which Anthropic models the chat model picker exposes. Toggle individual models on or off. Leaving all models on means no restriction (users see the full picker).
 
+## Chat & Coworkers
+
+Controls the default assistant chat and who can create [coworkers](/products/logicai/docs/coworkers). Both settings exist on the org default and per user; **admins always bypass them**.
+
+- **Coworkers only** — hides the default **New chat** so the user works exclusively through coworkers. Use it to keep everyone in structured, purpose-built personas.
+- **Disable creating coworkers** — hides **Add coworker**. Users can still use coworkers shared with them, but can't create their own.
+
 ## Per-User Overrides
 
 Below the org default, every user assigned the **Logic AI User** permission set is listed (admins are excluded). Click a user to open their override editor, where you can:
@@ -74,5 +81,6 @@ Below the org default, every user assigned the **Logic AI User** permission set 
 - Enable or disable individual tools just for that user
 - Adjust their per-call limits and approval requirements
 - Restrict the models they can pick
+- Set their chat access (**Coworkers only** / **Disable creating coworkers**)
 
 Each user shows whether they **inherit the org default** or are **customized**. Use **Revert to default** to clear a single user's override, or **Revert all to default** to clear every override at once.

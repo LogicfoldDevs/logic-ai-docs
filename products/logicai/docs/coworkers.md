@@ -25,6 +25,8 @@ In the chat sidebar, click **+ New coworker** and fill in:
 
 Your coworkers appear as chips in the sidebar. Click one to start (or continue) a chat with it; its colour tags the chats that belong to it.
 
+> Your admin can restrict this. If **Disable creating coworkers** is on you won't see **+ New coworker** (you can still use coworkers shared with you), and if **Coworkers only** is on the general **New chat** is hidden so you work entirely through coworkers. See [Policies](/products/logicai/docs/admin-policies#chat--coworkers).
+
 ## Visibility &amp; sharing
 
 Every coworker has one of three visibility settings:
@@ -50,6 +52,7 @@ You can review a coworker's memory from its menu in the sidebar:
 - **View** the facts it has learned.
 - **Edit** a fact to correct it.
 - **Forget** a fact you don't want it to keep (it's tombstoned so the capture layer won't silently re-learn it).
+- **Move** a fact to your own memory, to org memory, or to another coworker you can use — useful when a fact ends up on the wrong coworker or really belongs org-wide.
 
 Because a shared coworker's memory is shared, **anyone who can use the coworker can curate its memory** — a small, collaborative shared brain for the team.
 
