@@ -27,6 +27,7 @@ Memories are shown as cards, grouped into **Needs review** (new facts Logic AI h
 - **👍 / 👎 — "Is this right?"** Confirm a fact is correct, or flag that it's off. Your verdict tunes how much Logic AI trusts it.
 - **✏️ Edit** — fix the wording of a fact so it's exactly right.
 - **✕ Forget** — remove a fact you don't want kept. You'll be asked to confirm; once forgotten, Logic AI won't silently re-learn it.
+- **↗ Move to…** — send a fact somewhere it fits better: a [coworker](/products/logicai/docs/coworkers) you use, or org memory. You only see destinations you have access to. Anything you send to **org memory** is held for an admin to review before it's shared with everyone.
 
 When you've checked everything, you'll see **"You're all caught up."**
 

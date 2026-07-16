@@ -27,13 +27,25 @@ Logic AI **auto-tunes capture** from these signals: the **aggressiveness** (how 
 
 ## Memory scopes
 
-Memory items are grouped on the tab by scope. Each section shows the captured items (read-only here — memory self-curates; users curate their own from the chat via the [Your Memory](/products/logicai/docs/your-memory) panel):
+Memory items are grouped on the tab by scope:
 
-- **Org context** — org-wide facts that apply to everyone (e.g. pipeline stages, what "Enterprise" means).
-- **User context** — per-user facts, grouped by user and expandable. Each user's items are private to that user.
-- **Agent context** — items the agent has learned that help it operate.
+- **Org context** — org-wide facts that apply to everyone (e.g. pipeline stages, what "Enterprise" means). You **review and curate** these here — see [Org memory review](#org-memory-review) below.
+- **User context** — per-user facts, grouped by user and expandable. Read-only here (each user's items are private to that user; they curate their own from the chat via the [Your Memory](/products/logicai/docs/your-memory) panel).
+- **Agent context** — items the agent has learned that help it operate. Read-only; the agent self-curates.
 
 Coworker memory isn't shown here — it lives with each [coworker](/products/logicai/docs/coworkers) and is curated from the coworker's menu in the chat sidebar.
+
+## Org memory review
+
+Org-wide facts captured automatically don't go live immediately. Each one lands as **Pending review** and is held **out of everyone's prompts** until an admin acts on it, so shared memory stays deliberate. For each item you can:
+
+- **👍 Approve** — start injecting it as a positive org fact.
+- **👎 Approve as negative** — keep it injected, but framed as something Logic AI must *not* do or treat as true (useful for "we don't carry X").
+- **✏️ Edit** — fix the wording; editing also approves it.
+- **🗑 Delete** — remove it entirely.
+- **↗ Move to…** — re-home the fact to a [coworker](/products/logicai/docs/coworkers) (or your own memory) instead of keeping it org-wide — handy when an auto-captured fact really belongs to one coworker's area of work.
+
+You can also **add** an org fact yourself; anything an admin writes or edits is approved immediately. Approved items move to the **Reviewed** list, where the same actions stay available.
 
 ## Org schema knowledge (Deep Dive)
 
