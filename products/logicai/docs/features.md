@@ -37,6 +37,10 @@ Attach or point Logic AI at a file on a record — a PDF, image, text file, or o
 
 When Logic AI needs you to make a choice before continuing, it shows **clickable options** right in the chat, so you can just pick one instead of typing out your answer.
 
+## Queue your next message
+
+You don't have to wait for Logic AI to finish. Type — or send — your next message while it's still working, and it goes out automatically as soon as the current answer completes. A live timer shows how long the current answer is taking, and each reply notes how long it took.
+
 ## Blueprints — save and reuse your work
 
 When you've worked through something useful, save it as a **Blueprint** and run the same workflow again later without re-explaining it.
@@ -50,6 +54,10 @@ Your saved Blueprints appear as **chips above the chat box** — click one to ru
 Each Blueprint is **private by default**. Turn on **Share with everyone in the org** to make it available to all Logic AI users; only you (or an admin) can edit or delete one you own. Admins can review and manage every Blueprint from the [Blueprints](/products/logicai/docs/admin-blueprints) tab.
 
 Running a Blueprint doesn't bypass any safeguards — it runs its steps in your user context, with the same permissions and approvals as any other chat.
+
+## Scheduled Agents
+
+For recurring work you'd rather not do by hand, set up a **Scheduled Agent** — a saved task Logic AI runs on its own, on a schedule or on demand. Just ask in the chat: *"Every Monday at 8am, email me a summary of new leads."* Agents run with your permissions and appear in a **Scheduled Agents** tab where you can watch each run, edit them, or run them now. See [Scheduled Agents](/products/logicai/docs/scheduled-agents).
 
 ## Coworkers
 
