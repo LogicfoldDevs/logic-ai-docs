@@ -87,6 +87,16 @@ List metadata components of a given type (e.g. Apex classes, Flows, validation r
 ### read_metadata
 Read a specific component's definition as structured detail — e.g. the body of an Apex class or the logic of a Flow or validation rule. **Enabled by default (admins only).**
 
+## Scheduled Agent Tools
+
+These let Logic AI set up and manage [Scheduled Agents](/products/logicai/docs/scheduled-agents) — saved tasks that run on their own — right from a chat. They're available when Scheduled Agents is enabled (on by default; toggled per org or per user on the [Policies](/products/logicai/docs/admin-policies) tab).
+
+### agent_creator
+Create a scheduled agent from a plain-English description, e.g. "Every Monday at 8am, email me a summary of new leads." Logic AI captures the goal, schedule, and the tools the agent may use, then saves it to the **Scheduled Agents** tab.
+
+### agent_editor
+Update an agent the user already created — its instructions, schedule, tools, model, max turns, name, or whether it's active. Tool changes are checked against the tools agents are allowed to use, and Logic AI names any tool that needs admin approval.
+
 ## Memory Tools
 
 Logic AI's long-term memory is captured automatically and recalled invisibly (there is no "recall" tool) — see [Memory](/products/logicai/docs/admin-memory). The tools below let the model **write** to memory during a chat, and are available when memory is enabled:

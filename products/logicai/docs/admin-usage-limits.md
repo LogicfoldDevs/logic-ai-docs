@@ -5,7 +5,7 @@ description: Track monthly spend and cap it per source and per user, in USD.
 
 Usage Limits let you see where your AI spend is going and cap it — per **source** and per **user** — in USD per calendar month. Spend, limits, and caps all reset on the 1st.
 
-These controls live in the **This month's spend** section of the [Credits](/products/logicai/docs/admin-credits) tab, below the credit balance.
+These controls live on the **Usage** tab in the admin console (they moved out of the [Credits](/products/logicai/docs/admin-credits) tab).
 
 ## By source
 
