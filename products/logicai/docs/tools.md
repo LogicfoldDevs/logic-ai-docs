@@ -46,7 +46,7 @@ Delete multiple records at once. Disabled by default and **locked** — reach ou
 These let Logic AI take action in your org beyond reading and writing records. **All are enabled by default** and can be turned off per tool on the [Policies](/products/logicai/docs/admin-policies) tab. Each can optionally require in-chat approval before it runs.
 
 ### send_email
-Send an email on the user's behalf. Enabled by default, and **requires in-chat approval by default** — Logic AI shows the recipients, subject, and body before anything is sent.
+Send an email on the user's behalf. Enabled by default, and **requires in-chat approval by default** — Logic AI shows the recipients, subject, and body before anything is sent. It can **attach files**: a PDF or CSV it just generated, or a file already on a record (you must have access to each file).
 
 ### send_notification
 Send a Salesforce custom notification to users (the bell-icon notifications in Lightning). **Enabled by default.**
@@ -71,8 +71,11 @@ Launch an autolaunched Flow. **Enabled by default.**
 ### generate_csv
 Build a CSV file from query results and attach it to the chat session for download. CSV exports include the full result set (they are not limited by the SOQL row cap). Disabled by default.
 
+### generate_excel
+Build an Excel workbook from query results and save it to the chat session for download. Uses the same permission as `generate_csv` — enabling CSV export also enables Excel export.
+
 ### generate_pdf
-Compose a rich, formatted report in the side panel that can be exported. Disabled by default.
+Compose a rich, formatted report in the side panel and save it as a real PDF file on the chat session, with a **Download PDF** button. The file can also be attached to an email. Disabled by default.
 
 ### read_file
 Read the files attached to or related to a record — PDFs, images, text, and other file types — and return them as content Logic AI can actually see, so it can summarize or answer questions about an attachment. Always enabled (a safe, read-only capability with no side effects, so it isn't listed on the Policies tab).
@@ -99,22 +102,10 @@ Update an agent the user already created — its instructions, schedule, tools, 
 
 ## Memory Tools
 
-Logic AI's long-term memory is captured automatically and recalled invisibly (there is no "recall" tool) — see [Memory](/products/logicai/docs/admin-memory). The tools below let the model **write** to memory during a chat, and are available when memory is enabled:
+Logic AI's memory is saved and recalled automatically — there are no "remember" or "recall" tools, and memory never shows up as a step in the chat. See [Your Memory](/products/logicai/docs/your-memory). One tool is available when memory is enabled:
 
-### remember_user
-Save a fact or preference about the current user. Persists across conversations. Example: a user says "Remember that I manage the West region" and Logic AI recalls this in future chats.
-
-### forget_user
-Remove a previously saved user memory.
-
-### remember_recent_item
-Bookmark a record or piece of data the user was recently working with.
-
-### forget_recent_item
-Remove a bookmarked recent item.
-
-### remember_org
-Save org-wide knowledge that benefits all users. Example: "Remember that our fiscal year starts in April."
+### forget_memory
+Removes something Logic AI remembers when you ask it to (*"forget that I manage the West region"*, *"that's no longer true"*). Forgotten facts are never re-learned. Runs silently — Logic AI just confirms in a few words.
 
 ## Utility Tools
 

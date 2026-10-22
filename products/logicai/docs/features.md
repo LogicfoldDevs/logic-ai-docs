@@ -65,13 +65,11 @@ For focused, recurring work, create a **coworker** in the sidebar — a named ch
 
 ## Chats sidebar
 
-The sidebar lists your recent chats and coworkers. You can start a new chat, switch between conversations, delete chats you no longer need, and drag the divider to resize the panel — chats load as you scroll.
+The sidebar lists your recent chats and coworkers, grouped by Today, Yesterday, Previous 7 days and Older, with the most recently used chat on top. You can start a new chat, switch between conversations, **rename** a chat (your title is kept from then on), delete chats you no longer need, and drag the divider to resize the panel — chats load as you scroll. A spinner shows next to a chat while Logic AI is working on it, and a dot marks chats whose reply finished while you were elsewhere.
 
 ## Memory
 
-When memory is enabled for your org, Logic AI **remembers useful facts about you automatically** as you chat — your role, preferences, terminology, what you tend to work on — and quietly recalls them in future conversations, no command needed. You can still nudge it explicitly (*"remember that I manage the West region"*), and your 👍 / 👎 [reactions](/products/logicai/docs/feedback-and-reactions) help it learn which remembered facts are actually helping.
-
-Want to see exactly what it's learned? Click **Memory** in the chat header to review, correct, or forget any fact — see [Your Memory](/products/logicai/docs/your-memory).
+When memory is enabled for your org, Logic AI **remembers and uses what it learns automatically** — your role, preferences and terminology, the habits it notices in how you work, and what you're in the middle of. It applies your preferences without asking, understands vague requests like *"that account"*, and can open a new chat with *"Welcome back"* and suggestions to pick up where you left off. There's nothing to manage: ask *"what do you know about me?"* to see what it remembers, or say *"forget …"* to remove something. See [Your Memory](/products/logicai/docs/your-memory).
 
 ## Feedback
 

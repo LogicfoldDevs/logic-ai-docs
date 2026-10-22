@@ -1,44 +1,46 @@
 ---
 title: Your Memory
-description: See and tune exactly what Logic AI remembers about you.
+description: How Logic AI remembers you — automatically, with nothing to manage.
 ---
 
-As you chat, Logic AI quietly remembers things that help it work better for you — your role, your preferences, terminology you use, the kinds of records you work with. It recalls them automatically in later conversations, so you don't have to re-explain yourself.
+As you chat, Logic AI remembers things that help it work better for you — your role, your preferences, the terminology you use, how you like things done and what you're in the middle of. It uses all of this automatically in later conversations, so you don't have to re-explain yourself.
 
-You're always in control of what it keeps. The **Memory** panel shows everything Logic AI has learned about you, and lets you confirm, correct, or forget any of it.
+**There's nothing to manage.** Memory learns, tidies itself up and gets used on its own. Your memory is **private to you** — no one else sees it.
 
-## Opening your memory
+## What it picks up
 
-In the chat header, click **Memory** ("See & tune what I remember about you"). The panel opens in place of the chat; use the back arrow to return. Everything here is **private to you** — no one else sees your memory.
+- **Things you tell it** — *"I manage the West region"*, *"we call renewals rebookings"*. You don't need to say "remember"; it notices on its own. (Saying *"remember that…"* works too.)
+- **Corrections** — if you say *"no, only the open ones"*, it learns the rule behind it, not just the one answer.
+- **Habits** — patterns in how you work, like always wanting results as a table or checking the pipeline on Mondays. A habit is only applied once Logic AI has seen it in **two separate chats**, so a one-off request never becomes a rule, and habits you stop showing fade away.
+- **Unfinished work** — something you started but didn't finish, so you can pick it up later.
+- **Tasks you keep repeating** — Logic AI may offer, once, to turn one into a [scheduled agent](/products/logicai/docs/scheduled-agents). If you say no, it won't ask again.
 
-## The overview
+## How it uses what it knows
 
-At the top, two quick metrics:
+- **Defaults, without asking** — your preferences are simply applied (format, filters, which records count as "mine"). If something is ambiguous and what it knows points one way, it goes with that and mentions the assumption in a few words.
+- **Vague requests make sense** — *"that account"*, *"the report"*, *"do the same for the other one"* are worked out from what you're working on and the record you have open.
+- **What you say wins** — anything you say in the current message always overrides what it remembers.
+- **It never talks about memory** — you won't see "saving…" steps, loaders or *"I'll remember that"*. It just knows.
 
-- **Accuracy** — a score reflecting how well your memory is serving you, based on your feedback.
-- **Reviewed** — how many of your remembered facts you've checked, with a progress bar. Reviewing helps Logic AI trust the right facts.
+## Picking up where you left off
 
-Below that you can **filter** by category using the pills, or **search** your memories by keyword.
+When you start a new chat, Logic AI may greet you with *"Welcome back"* and offer suggestions based on what you've been doing — *"Finish the Acme forecast"*, your usual Monday check, or a task it could automate. Click one to send it, or just type something else.
 
-## Reviewing what Logic AI remembers
+## Seeing and removing what it remembers
 
-Memories are shown as cards, grouped into **Needs review** (new facts Logic AI hasn't had you confirm yet) and **Reviewed** (ones you've already checked). Each card shows the fact and its category. On any card you can:
+Just ask in the chat:
 
-- **👍 / 👎 — "Is this right?"** Confirm a fact is correct, or flag that it's off. Your verdict tunes how much Logic AI trusts it.
-- **✏️ Edit** — fix the wording of a fact so it's exactly right.
-- **✕ Forget** — remove a fact you don't want kept. You'll be asked to confirm; once forgotten, Logic AI won't silently re-learn it.
-- **↗ Move to…** — send a fact somewhere it fits better: a [coworker](/products/logicai/docs/coworkers) you use, or org memory. You only see destinations you have access to. Anything you send to **org memory** is held for an admin to review before it's shared with everyone.
+- *"What do you know about me?"* — it answers plainly from what it remembers.
+- *"Forget that I manage the West region"* (or *"that's no longer true"*) — it's removed, and Logic AI won't quietly learn it back, even reworded.
 
-When you've checked everything, you'll see **"You're all caught up."**
+## Company knowledge
 
-## Tuning memory as you chat
-
-You don't have to open the panel to steer memory. When you 👍 / 👎 a message in the chat, Logic AI shows a few quick **memory feedback** chips ("What worked?" or "Was it my memory?") so you can tell it, in one click, whether its memory helped. See [Feedback & Reactions](/products/logicai/docs/feedback-and-reactions).
+Some things are true for everyone (*"our fiscal year starts in February"*). Logic AI shares those across your org automatically once it's confident about them or has heard them in two separate chats. Admins can view, edit or delete company knowledge on the [Memory](/products/logicai/docs/admin-memory) tab.
 
 ## When memory is off
 
-If your admin has turned memory off for the org, the panel says so and Logic AI won't remember anything between conversations. An admin can enable it from the [Memory](/products/logicai/docs/admin-memory) tab.
+If your admin has turned memory off for the org, Logic AI won't remember anything between conversations. An admin can turn it on from the [Memory](/products/logicai/docs/admin-memory) tab (it's on by default).
 
 ## Coworker memory
 
-[Coworkers](/products/logicai/docs/coworkers) have their own separate memory, reviewed the same way — open a coworker's memory from its menu in the sidebar. A shared coworker's memory is shared with everyone who can use it, so curating it is a team effort.
+[Coworkers](/products/logicai/docs/coworkers) have their own separate memory that works the same way. A shared coworker's memory is shared with everyone who can use it — except unfinished work, which is only ever shown to the person it belongs to.

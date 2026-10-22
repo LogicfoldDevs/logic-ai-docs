@@ -45,18 +45,12 @@ Notes on how sharing works:
 
 ## Coworker memory
 
-Each coworker keeps its own memory, separate from your personal memory and from other coworkers. It's captured the same way the rest of Logic AI's memory works — automatically, as you chat — and recalled invisibly in future conversations with that coworker. See [Memory](/products/logicai/docs/admin-memory) for how capture and recall work.
+Each coworker keeps its own memory, separate from your personal memory and from other coworkers. It works exactly like the rest of Logic AI's memory — learned automatically as you chat, used automatically in future conversations with that coworker, with nothing to manage. See [Your Memory](/products/logicai/docs/your-memory) for how it works.
 
-You can review a coworker's memory from its menu in the sidebar:
+- A shared coworker's memory is shared with everyone who can use it, so the team works from the same context. **Unfinished work** is the exception — it's only ever shown to the person it belongs to.
+- To remove something, say *"forget …"* in a chat with that coworker.
 
-- **View** the facts it has learned.
-- **Edit** a fact to correct it.
-- **Forget** a fact you don't want it to keep (it's tombstoned so the capture layer won't silently re-learn it).
-- **Move** a fact to your own memory, to org memory, or to another coworker you can use — useful when a fact ends up on the wrong coworker or really belongs org-wide.
-
-Because a shared coworker's memory is shared, **anyone who can use the coworker can curate its memory** — a small, collaborative shared brain for the team.
-
-Owners can also regenerate a coworker's **guidelines** — a short, model-written summary of how the coworker should work, distilled from its memory. Guidelines refresh automatically after memory consolidation; the owner can trigger a refresh manually from the coworker's menu.
+Owners can also regenerate a coworker's **guidelines** — a short, model-written summary of how the coworker should work, distilled from its memory. Guidelines refresh automatically when its memory changes; the owner can trigger a refresh from the coworker's edit window.
 
 ## Deleting a coworker
 
