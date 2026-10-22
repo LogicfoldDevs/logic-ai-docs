@@ -1,51 +1,41 @@
 ---
 title: Memory
-description: Configure Logic AI's long-term memory — automatic capture, health tuning, and org knowledge.
+description: Logic AI's long-term memory — fully automatic, with optional admin control over company knowledge.
 ---
 
-The Memory tab manages Logic AI's long-term memory. Memory lets Logic AI remember facts about users and your org across conversations and get more useful over time.
+Memory lets Logic AI remember facts about your users and your org across conversations and get more useful over time. **It runs entirely on its own** — nobody needs to review, approve or rebuild anything. This tab is an optional safety valve: use it to turn memory on or off, and to look at or correct what Logic AI has learned about your company.
 
-Memory is **captured automatically**. As people chat, a background classifier distils durable facts into structured **memory items** and files them by scope (user, org, coworker, agent). Those items are then **recalled invisibly** — the relevant ones are injected into the prompt on the read path, with no "recall" tool and no loader step. Users don't manage memory by hand; they simply chat, and can steer it with 👍 / 👎 feedback (see [Feedback & Reactions](/products/logicai/docs/feedback-and-reactions)).
+## How it works
+
+- **Capture** — after each message, a background step saves durable facts (preferences, terminology, how work is done, where data lives, corrections). After each chat, a second pass learns **habits** (applied once seen in two separate chats), **unfinished work**, and **repeated tasks** worth automating.
+- **Recall** — every message gets the user's profile plus anything relevant to what they just asked and the record they have open, with no tool call or loader. See [Your Memory](/products/logicai/docs/your-memory) for what users experience.
+- **Upkeep** — every night Logic AI tidies memory on its own: it indexes older facts for search, expires stale and finished items, fades habits that stopped showing up, merges duplicates, and learns from the past chats of anyone it hasn't learned from yet. This is scheduled automatically when the package is installed; on a quiet day it does almost nothing and uses almost no credits.
+- **Forgetting** — users say *"forget …"* in chat. A forgotten fact is never re-learned, even reworded.
+
+Memory is designed not to raise chat costs: the part of each message that changes from question to question is attached to that message, so the rest of the conversation stays cached.
 
 ## Memory toggle
 
-At the top of the tab, **Enable memory** turns the whole system on or off. When it's off, the memory layers are skipped in the prompt and the memory tools are hidden from the model.
+**Enable memory** turns the whole system on or off (it's on by default). When it's off, Logic AI stops learning and stops using what it has learned.
 
-## Memory health
+## Org memory
 
-A rolling **health score** (last 14 days) summarises how well memory is serving your users, based on the feedback signals it collects:
+Company-wide facts that apply to everyone (e.g. pipeline stages, what "Enterprise" means). There is **no approval step**: an automatically learned fact is used once Logic AI is confident about it or has heard it in two separate chats. Facts that haven't reached that bar yet are marked **Still learning** and aren't used.
 
-- **Happy** — a 👍 confirmed the recalled memory helped.
-- **Missing** — the user indicated something should have been remembered but wasn't.
-- **Too much** — the user indicated Logic AI recalled too much or the wrong thing.
+You can:
 
-Logic AI **auto-tunes capture** from these signals: the **aggressiveness** (how readily it captures new facts) and the **confidence floor** (the bar an item must clear to be kept) adjust themselves as feedback accrues. Click **Recompute** to apply the latest signals immediately.
+- **Add** a fact yourself — admin-written facts are used immediately.
+- **Edit** a fact to fix its wording.
+- **Delete** a fact — it stops being used and won't be learned again.
 
-## Rebuild from history
+When a chat user says an org fact is wrong, Logic AI stops using it until it's confirmed again; only an admin can delete it outright.
 
-**Rebuild from history** scans every user's past chat sessions and messages and seeds structured memory from them. Any legacy (Version 1) memory is migrated in, then cleared once it's been folded into the new items. The rebuild is additive and de-duplicated, runs in the background, and uses credits for the analysis.
+## User and agent context
 
-## Memory scopes
-
-Memory items are grouped on the tab by scope:
-
-- **Org context** — org-wide facts that apply to everyone (e.g. pipeline stages, what "Enterprise" means). You **review and curate** these here — see [Org memory review](#org-memory-review) below.
-- **User context** — per-user facts, grouped by user and expandable. Read-only here (each user's items are private to that user; they curate their own from the chat via the [Your Memory](/products/logicai/docs/your-memory) panel).
+- **User context** — per-user facts, grouped by user and expandable. Read-only here; each user's memory is private to them and managed by simply chatting.
 - **Agent context** — items the agent has learned that help it operate. Read-only; the agent self-curates.
 
-Coworker memory isn't shown here — it lives with each [coworker](/products/logicai/docs/coworkers) and is curated from the coworker's menu in the chat sidebar.
-
-## Org memory review
-
-Org-wide facts captured automatically don't go live immediately. Each one lands as **Pending review** and is held **out of everyone's prompts** until an admin acts on it, so shared memory stays deliberate. For each item you can:
-
-- **👍 Approve** — start injecting it as a positive org fact.
-- **👎 Approve as negative** — keep it injected, but framed as something Logic AI must *not* do or treat as true (useful for "we don't carry X").
-- **✏️ Edit** — fix the wording; editing also approves it.
-- **🗑 Delete** — remove it entirely.
-- **↗ Move to…** — re-home the fact to a [coworker](/products/logicai/docs/coworkers) (or your own memory) instead of keeping it org-wide — handy when an auto-captured fact really belongs to one coworker's area of work.
-
-You can also **add** an org fact yourself; anything an admin writes or edits is approved immediately. Approved items move to the **Reviewed** list, where the same actions stay available.
+Coworker memory isn't shown here — it lives with each [coworker](/products/logicai/docs/coworkers).
 
 ## Org schema knowledge (Deep Dive)
 
@@ -59,7 +49,3 @@ The scan pauses after the object sweep to show an **estimated credit cost** befo
 ## Agent knowledge
 
 Craft knowledge Logic AI accumulates automatically from recovering from recoverable tool errors — rule-level patterns (SOQL syntax, field-naming gotchas), not record-specific facts. It's read-only here; the agent self-curates it and a background consolidator dedupes it as it grows. You can **Consolidate now** to dedupe it or **Clear** it.
-
-## Consolidation
-
-Logic AI consolidates memory in the background as it grows or goes stale — merging near-duplicate facts, pruning stale items, and keeping the most useful information across the org and every user. You can trigger it manually with the **Consolidate now** buttons.
