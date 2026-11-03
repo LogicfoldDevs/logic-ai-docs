@@ -41,6 +41,10 @@ When Logic AI needs you to make a choice before continuing, it shows **clickable
 
 You don't have to wait for Logic AI to finish. Type — or send — your next message while it's still working, and it goes out automatically as soon as the current answer completes. A live timer shows how long the current answer is taking, and each reply notes how long it took.
 
+## Several chats at once
+
+You can also switch to another chat — or start a new one — while Logic AI is still working. Each chat keeps going on its own, up to four at the same time. If you refresh the page while an answer is still in progress, Logic AI reopens that chat and carries on where it left off.
+
 ## Blueprints — save and reuse your work
 
 When you've worked through something useful, save it as a **Blueprint** and run the same workflow again later without re-explaining it.
@@ -65,7 +69,7 @@ For focused, recurring work, create a **coworker** in the sidebar — a named ch
 
 ## Chats sidebar
 
-The sidebar lists your recent chats and coworkers, grouped by Today, Yesterday, Previous 7 days and Older, with the most recently used chat on top. You can start a new chat, switch between conversations, **rename** a chat (your title is kept from then on), delete chats you no longer need, and drag the divider to resize the panel — chats load as you scroll. A spinner shows next to a chat while Logic AI is working on it, and a dot marks chats whose reply finished while you were elsewhere.
+The sidebar lists your recent chats and coworkers, grouped by Today, Yesterday, Previous 7 days and Older, with the most recently used chat on top. You can start a new chat, switch between conversations, **rename** a chat (your title is kept from then on), delete chats you no longer need, and drag the divider to resize the panel — chats load as you scroll. In a long chat, use **Load earlier messages** at the top to scroll back to the beginning. A spinner shows next to a chat while Logic AI is working on it, and a dot marks chats whose reply finished while you were elsewhere.
 
 ## Memory
 
