@@ -69,13 +69,13 @@ Launch an autolaunched Flow. **Enabled by default.**
 ## File Tools
 
 ### generate_csv
-Build a CSV file from query results and attach it to the chat session for download. CSV exports include the full result set (they are not limited by the SOQL row cap). Disabled by default.
+Build a CSV file from query results and attach it to the chat session for download. CSV exports include the full result set (they are not limited by the SOQL row cap). Fields from related records get their own columns (for example `Account.Name`). Disabled by default.
 
 ### generate_excel
 Build an Excel workbook from query results and save it to the chat session for download. Uses the same permission as `generate_csv` — enabling CSV export also enables Excel export.
 
 ### generate_pdf
-Compose a rich, formatted report in the side panel and save it as a real PDF file on the chat session, with a **Download PDF** button. The file can also be attached to an email. Disabled by default.
+Compose a rich, formatted report in the side panel and save it as a real PDF file on the chat session, with a **Download PDF** button. The PDF looks just like the report on screen, and once it's saved the side panel shows the actual PDF (a **Preview / PDF** button switches between them). The side panel can be resized by dragging its left edge. The file can also be attached to an email. Disabled by default.
 
 ### read_file
 Read the files attached to or related to a record — PDFs, images, text, and other file types — and return them as content Logic AI can actually see, so it can summarize or answer questions about an attachment. Always enabled (a safe, read-only capability with no side effects, so it isn't listed on the Policies tab).
